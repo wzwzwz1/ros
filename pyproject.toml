@@ -1,0 +1,44 @@
+[project]
+name = "spatial-agent"
+version = "0.1.0"
+description = "Wheeltec spatial understanding and navigation agent (Mac-side application)"
+requires-python = ">=3.11,<3.12"
+readme = "README.md"
+dependencies = [
+    "pydantic>=2.7,<3",
+    "fastapi>=0.110,<1",
+    "uvicorn>=0.29,<1",
+    "httpx>=0.27,<1",
+]
+
+[project.optional-dependencies]
+# Declared for P2/P5 first install; NOT resolved or installed in P0.
+# Versions must be locked at first actual install (development-requirements.md §3).
+# perception = ["onnxruntime", "opencv-python-headless", "ultralytics"]
+# voice = ["sherpa-onnx", "silero-vad"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+    "websockets>=12,<14",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/spatial_agent"]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]

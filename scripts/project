@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Unified project entry point (P0 contract: ./scripts/project <command>).
+# Runs the CLI with the project's locked Python environment.
+set -euo pipefail
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+
+if [ ! -x "$REPO_ROOT/.venv/bin/python" ]; then
+  echo "error: .venv not found; run: uv sync   (or: $0 bootstrap --target mac)" >&2
+  exit 3
+fi
+
+exec "$REPO_ROOT/.venv/bin/python" -m spatial_agent.cli "$@"
