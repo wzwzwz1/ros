@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "run_id": null,
+  "phase": "P0",
+  "requested_modes": ["mock"],
+  "run_status": "NOT_RUN",
+  "phase_gate_status": "NOT_RUN",
+  "started_at_utc": null,
+  "finished_at_utc": null,
+  "code": {"commit": null, "dirty": null, "diff_sha256": null},
+  "deployment": {"mac_release": null, "robot_release": null},
+  "identity": {"robot_id": null, "map_id": null, "calibration_id": null, "session_id": null},
+  "artifacts": {
+    "suite_manifest": null,
+    "suite_manifest_sha256": null,
+    "environment": null,
+    "config_redacted": null,
+    "config_sha256": null,
+    "models_lock_sha256": null,
+    "trials": null,
+    "events": null,
+    "evidence_manifest": null
+  },
+  "cases": [
+    {
+      "case_id": "P0-BOOT",
+      "mode": "mock",
+      "dependencies": [],
+      "motion": false,
+      "required": true,
+      "status": "NOT_RUN",
+      "trial_count": 0,
+      "passed_trials": 0,
+      "failed_trials": 0,
+      "metrics": [],
+      "evidence_paths": [],
+      "reason": "Template; no commands have been implemented or executed."
+    }
+  ],
+  "linked_prior_runs": [],
+  "missing_required_cases": [],
+  "blockers": [],
+  "next_actions": [],
+  "operator_measurements": [],
+  "api_usage": {"requests": 0, "input_tokens": 0, "output_tokens": 0, "cost": null, "currency": null, "price_checked_at": null}
+}

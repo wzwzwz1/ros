@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "created_at_utc": null,
+  "models": [
+    {
+      "logical_name": "chair_detector",
+      "model_id": "yolo11n",
+      "source_url": null,
+      "revision": null,
+      "license_id": null,
+      "license_url": null,
+      "runtime": "onnx",
+      "runtime_version": null,
+      "precision": null,
+      "input_shape": null,
+      "preprocess_version": null,
+      "supported_labels": [],
+      "files": [],
+      "file_required_fields": ["path", "size_bytes", "sha256"],
+      "downloaded": false,
+      "verified": false,
+      "notes": "Fill from actual official source and exported artifact. Preserve source/export hashes and export command/version."
+    }
+  ],
+  "providers": [
+    {
+      "name": "deepseek",
+      "base_url": "https://api.deepseek.com",
+      "model_id": null,
+      "capability_probe_run_id": null,
+      "probed_at_utc": null,
+      "tools_verified": false,
+      "image_input_verified": false,
+      "notes": "Do not store API keys. Remote weights cannot be hashed; record returned model/version metadata when available."
+    }
+  ]
+}

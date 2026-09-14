@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "suite_id": null,
+  "phase": "P3",
+  "primary_mode": "hardware",
+  "dependencies": [],
+  "frozen_at_utc": null,
+  "code_release": null,
+  "config_sha256": null,
+  "map_id": null,
+  "calibration_id": null,
+  "models_lock_sha256": null,
+  "random_seed": 20260914,
+  "session_id": null,
+  "dataset_manifest": null,
+  "dataset_sha256": null,
+  "case_ids": ["P3-TASK"],
+  "thresholds": {
+    "minimum_trials": 10,
+    "minimum_successful_trials": 8,
+    "max_task_duration_s": 300,
+    "object_boundary_distance_m": [0.6, 1.0],
+    "max_contacts": 0,
+    "max_false_successes": 0
+  },
+  "trials": [],
+  "trial_required_fields": [
+    "trial_id", "case_id", "start_fixture_id", "target_fixture_id",
+    "expected_outcome", "setup_instructions", "measurement_method",
+    "allowed_interventions", "evidence_requirements"
+  ],
+  "notes": "Example covers only P3-TASK, not the entire phase. Real acceptance requires all mandatory cases. Populate actual trials before freezing; changes require a new suite/run."
+}

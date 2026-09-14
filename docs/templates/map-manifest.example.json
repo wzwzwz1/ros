@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "map_id": null,
+  "image_path": null,
+  "image_sha256": null,
+  "yaml_path": null,
+  "yaml_sha256": null,
+  "frame_id": "map",
+  "resolution_m_per_pixel": null,
+  "origin_xy_yaw": null,
+  "coordinate_frame_version": null,
+  "localization_mode": null,
+  "allowed_area_polygon_map_m": null,
+  "initial_pose_method": "measured_pose_with_covariance",
+  "measurement_reference": null,
+  "viewpoints": [],
+  "acceptance_goals": [],
+  "created_at_utc": null,
+  "created_from_release": null,
+  "notes": "Fill with actual map metadata. Each viewpoint/goal needs id, map_id, x_m, y_m, yaw_rad and its P1 reachability evidence."
+}

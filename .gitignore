@@ -1,0 +1,40 @@
+# Private configuration (never commit credentials or real robot config)
+configs/local/
+
+# Private vendor docs containing credentials — local only, never commit
+wheeltec-ssh-connect.md
+.env*
+!.env.example
+
+# Local data and run artifacts (manifests/reports are committed selectively)
+datasets/
+artifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# uv
+# uv.lock IS committed (reproducible environments); only the cache is local
+uv-cache/
+
+# Model / data caches
+models/
+*.onnx
+*.pt
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

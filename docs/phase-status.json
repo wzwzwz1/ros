@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-14",
+  "documentation_version": "1.0",
+  "current_phase": "P0",
+  "project_implemented": false,
+  "phases": [
+    {"id": "P0", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": [], "reports": [], "next_action": "Implement bootstrap, configuration validation, mock gateway and read-only inventory."},
+    {"id": "P1", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": ["P0"], "reports": [], "next_action": "Implement and verify independent motion supervision before ground navigation."},
+    {"id": "P2", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": ["P1"], "reports": [], "next_action": "Verify RGB-D calibration and capture-time TF, then implement detection and memory."},
+    {"id": "P3", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": ["P1", "P2"], "reports": [], "next_action": "Implement deterministic object navigation with arrival verification."},
+    {"id": "P4", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": ["P3"], "reports": [], "next_action": "Implement bounded planner and validated tools; probe the configured DeepSeek API."},
+    {"id": "P5", "implementation_status": "NOT_STARTED", "acceptance_status": "NOT_RUN", "depends_on": ["P4"], "reports": [], "next_action": "Integrate actual robot audio, custom KWS, VAD, ASR and TTS."}
+  ]
+}

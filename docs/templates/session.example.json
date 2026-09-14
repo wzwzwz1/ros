@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "example_only": true,
+  "mode": "hardware",
+  "session_id": null,
+  "robot_id": null,
+  "map_id": null,
+  "config_sha256": null,
+  "operator": null,
+  "operator_confirmation_source": null,
+  "confirmed_at_utc": null,
+  "expires_at_utc": null,
+  "max_duration_minutes": 30,
+  "operator_present_confirmed": false,
+  "test_area_clear_confirmed": false,
+  "allowed_area_polygon_map_m": null,
+  "allowed_case_ids": [],
+  "max_linear_speed_mps": 0.1,
+  "physical_stop_method": null,
+  "physical_stop_reachability_confirmed": false,
+  "notes": "Template only. Populate from actual existing user/operator confirmation. The agent must not invent or self-approve physical conditions."
+}
